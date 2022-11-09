@@ -1,0 +1,333 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    height: 5em;
+    color: aliceblue;
+}
+.training span{
+    color: orangered;
+}
+.list-links{
+    flex-basis: 50%;
+}
+.list-nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    font-weight: bold;
+    align-items: center;
+    margin: 0;
+    cursor: pointer;
+}
+.anchor{
+    border: 8px orangered solid;
+    color: aliceblue;
+    text-decoration: none;
+    background: orangered;   
+}
+.d-v-back{
+    position: relative;
+}
+.video-header{
+    position: absolute;
+    z-index: -2;
+    object-fit: cover;
+    top: -7em;
+    height: 48em;
+    width: 100%;
+}
+.d-v-back::after{
+    width: 100%;
+    height: 121vh;
+    top: -7em;
+    left: 0;
+    position: absolute;
+    content: "";
+    background-color: rgba(0, 0, 0, 0.61);
+    z-index: -1;
+}
+.center-header{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    color: aliceblue;
+}
+.center-header h2{
+    font-size: x-large;
+    font-weight: 800;
+}
+.center-header h1{
+    font-weight: bolder;
+    font-size: 5em;
+    text-align: center;
+}
+.center-header h1 span{
+    color: orangered;
+    text-align: center;
+}
+.center-header a{
+    color: aliceblue;
+    text-decoration: none;
+    border: 5px orangered solid;
+    width: 15em;
+    height: 3em;
+    padding: 0.5em;
+    background: orangered;
+    text-align: center;
+}
+@media screen and (max-width: 993px) {
+    .training{
+        width: 100%;
+        text-align: center;
+    }
+    .list-links{
+        width: 100%;
+    flex-basis: auto;
+    }
+    .list-nav{
+        height: 7em;
+    }
+}
+.choose{
+        text-align: center;
+        margin-top: 3em;
+}
+.choose h1{
+    font-weight: 900;
+}
+.choose h1 span{
+    color: orangered; 
+}
+.all-CHOOSE-PROGRAM{
+    max-width: 95%;
+    margin: auto;
+}
+.basic-fit{
+    display: flex;
+    align-items: center;
+    margin-bottom: 5em;
+}
+.marg{
+    margin-left: 10px;
+}
+.marg a{
+    color: orangered;
+}
+.begin-today{
+    background-image: url(../images/cta-bg.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    margin-top: 8em;
+    margin-bottom: 8em;
+    height: 25em;
+}
+.begin-today h1 span{
+    color: orangered;
+}
+.begin-today p{
+    width: 65%;
+    text-align: center;
+}
+.begin-today a{
+    border: 8px orangered solid;
+    color: aliceblue;
+    text-decoration: none;
+    background: orangered;
+}
+.our-classes{
+    text-align: center;
+}
+.our-classes h1{
+    font-weight: bolder;
+    font-size: xx-large;
+}
+.our-classes h1 span{
+    color: orangered;
+}
+.our-classes p{
+    width: 50%;
+    margin: auto; 
+    margin-bottom: 8em;
+}
+.frist-training{
+    width: 95%;
+    margin: auto;  
+}
+.frist-training ul{
+    list-style: none;
+    font-size: xx-large;
+    font-weight: bold;
+}
+.frist-training ul li{
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.589);
+    width: 100%;
+    height: 2.5em;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 1em;
+}
+.ul-frist-training ul li a{
+    font-size: x-large;
+}
+.anchor-li{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.678);
+}
+.anchor-li-link{
+    background-color: orangered;
+}
+.anchor-li-link a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.div-no-2-frist-training{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.div-no-2-frist-training h1{
+    font-size: x-large;
+}
+.div-no-2-frist-training a{
+    background: orangered;
+    border: 1em solid orangered;
+    width: 49%;
+    color: aliceblue;
+    text-align: center;
+    text-decoration: none;
+}
+.classes-schedule{
+    background-image: url(../images/schedule-bg.jpg);
+    background-size: cover;
+    margin-top: 15em;
+}
+.prag-classes-schedule{
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    color: aliceblue;
+}
+.prag-classes-schedule h1 span{
+    color: orangered;
+}
+.link-classes-schedule ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex-wrap: wrap;
+}
+.link-classes-schedule ul li a{
+    color: aliceblue;
+    text-decoration: none;
+}
+.link-classes-schedule ul li span{
+ color: aliceblue;
+ margin: 2em;
+}
+.link-classes-schedule{
+    margin-top: 5em;
+}
+.table table{
+    text-align: center;
+    margin: auto;
+    width: 80%;
+    color: aliceblue;
+    margin-bottom: 5em;
+}
+.table table tr td{
+    width: 25%;
+    border: solid wheat;
+    height: 6em;
+}
+.free{
+    width: 100%;
+    height: 5em;
+}
+.EXPERT-TRAINERS{
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    margin-top: 10em;
+}
+.EXPERT-TRAINERS h1 span{
+    color: orangered;
+}
+.card{
+    max-width: 95%;
+    margin: auto;
+    margin-top: 3em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.card h5{
+    color: orangered;
+}
+.card h1{
+    font-size: x-large;
+}
+.form{
+    background-image: url(../images/contact-bg.jpg);
+}
+footer{
+    MAX-WIDTH: 95%;
+    margin: auto !important;
+    margin-top: 5em !important;
+}
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    background: aliceblue;
+    height: 20em;
+    width: 70%;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;  
+}
+.your-name .email{
+    height: 145%;
+}
+.div-sub{
+    width: 85%;
+}
+.div-sub input{
+    width: 100%;
+    height: 145%;
+}
+.message{
+    height: 35%;
+    width: 85%;
+}
+.butt-send{
+    background: orangered;
+    border: orangered;
+    color: aliceblue;  
+}
+iframe{
+    max-width: 95%;
+}
+.map{
+    text-align: center;
+}
